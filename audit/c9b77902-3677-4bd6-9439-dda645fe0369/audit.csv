@@ -1,0 +1,163 @@
+event,node,start,end
+form start,,1637134143246,
+question,/aR6PPMC6cqn8347ghKWeBk/enumerator_num,1637134143247,1637134146490
+question,/aR6PPMC6cqn8347ghKWeBk/refugee_status,1637134146501,1637134148756
+question,/aR6PPMC6cqn8347ghKWeBk/consent,1637134148768,1637134397033
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_gpc,1637134397052,1637134400205
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_gpc_no,1637134400222,1637134402369
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/hhh,1637134402379,1637134419194
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/will_to_response,1637134419203,1637134423668
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/relationship,1637134423681,1637134428266
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/age_respondent_r,1637134428276,1637134464257
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/gender_respondent_r,1637134464266,1637134468005
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/age_respondent_r,1637134468015,1637134473394
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/gender_respondent_r,1637134473404,1637134474508
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/sex_head_hh,1637134474517,1637134476879
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/household_size_1,1637134476888,1637134516406
+group questions,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/household_size,1637134516415,1637134752913
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/calc_note,1637134752976,1637134754042
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/preg_lact,1637134754051,1637134761275
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/chronic_disease,1637134761291,1637134792195
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/pwd,1637134792213,1637134799692
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/adult_employment_num,1637134799706,1637134826027
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/child_employment_num,1637134826037,1637134841530
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/adult_employment_num,1637134841540,1637134842663
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/child_employment_num,1637134842673,1637134843290
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/displaced_escalation,1637134843302,1637134853206
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/shelter_type,1637134853219,1637134869635
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/occupancy_arrangement,1637134869645,1637134874715
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/fear_eviction,1637134874729,1637134885106
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/receive_other_assistance,1637134885115,1637134906637
+group questions,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/transfer_size/transfer_amount,1637134906647,1637134911966
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/receive_other_assistance,1637134912030,1637134913018
+group questions,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/transfer_size/transfer_amount,1637134913028,1637134916299
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/receive_other_assistance,1637134916362,1637134917534
+group questions,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/transfer_size/transfer_amount,1637134917546,1637135250342
+group questions,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/transfer_size/mpca_behaviors,1637135250431,1637135395187
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/transfer_timeliness/transfer_alignment,1637135395240,1637135411489
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/transfer_timeliness/transfer_timing,1637135411498,1637135428769
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/elasticity_durability/escalation_priorities,1637135428780,1637135497518
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/elasticity_durability/mpca_help_escalation_priorities,1637135497528,1637135509253
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/elasticity_durability/escalation_priorities,1637135509262,1637135513043
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/elasticity_durability/mpca_help_escalation_priorities,1637135513052,1637135523646
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/elasticity_durability/exp_shock,1637135523657,1637135596371
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/elasticity_durability/type_of_shock,1637135596382,1637135604186
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/elasticity_durability/role_mpca_med,1637135604195,1637135625325
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/expenditure_and_impact/income_sources,1637135625335,1637135693490
+group questions,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/expenditure_and_impact/expenses,1637135693499,1637136054859
+group questions,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/lcsi,1637136054917,1637136194319
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/change_financial_situation,1637136194381,1637136216008
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/change_psych_situation,1637136216020,1637136236446
+group questions,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/change_behaviors_mpca,1637136236458,1637136362708
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/change_dignity_mpca,1637136362746,1637136386206
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/change_dignity_mpca_how,1637136386218,1637136415950
+question,/aR6PPMC6cqn8347ghKWeBk/satisfaction/change_relations_relatives,1637136415966,1637136432342
+question,/aR6PPMC6cqn8347ghKWeBk/satisfaction/changes_relations_community,1637136432354,1637136445470
+question,/aR6PPMC6cqn8347ghKWeBk/satisfaction/debts,1637136445487,1637136452717
+question,/aR6PPMC6cqn8347ghKWeBk/satisfaction/source_debts,1637136452730,1637136494814
+question,/aR6PPMC6cqn8347ghKWeBk/satisfaction/debt_purpose,1637136494823,1637136506139
+question,/aR6PPMC6cqn8347ghKWeBk/coherence/complaint_mechanisms,1637136506149,1637136561081
+question,/aR6PPMC6cqn8347ghKWeBk/coherence/reason_not_use_complaint,1637136561092,1637136564444
+question,/aR6PPMC6cqn8347ghKWeBk/coherence/preferred_assistance,1637136564460,1637136593406
+question,/aR6PPMC6cqn8347ghKWeBk/thanks,1637136593416,1637136595246
+question,/aR6PPMC6cqn8347ghKWeBk/coherence/preferred_assistance,1637136595255,1637136602531
+question,/aR6PPMC6cqn8347ghKWeBk/thanks,1637136602540,1637136635086
+end screen,,1637136635095,1637136660212
+form save,,1637136660808,
+form exit,,1637136660808,
+form resume,,1637136911664,
+jump,,1637136911664,1637136918127
+question,/aR6PPMC6cqn8347ghKWeBk/enumerator_num,1637136918165,1637136920048
+question,/aR6PPMC6cqn8347ghKWeBk/refugee_status,1637136920057,1637136935366
+form save,,1637136935809,
+form exit,,1637136935809,
+form resume,,1637136946503,
+jump,,1637136946504,1637136952467
+end screen,,1637136952516,1637136957573
+form save,,1637136957997,
+form exit,,1637136957998,
+form resume,,1637136962953,
+jump,,1637136962954,1637136965036
+question,/aR6PPMC6cqn8347ghKWeBk/enumerator_num,1637136965064,1637136966514
+question,/aR6PPMC6cqn8347ghKWeBk/refugee_status,1637136966523,1637136970733
+form exit,,1637136970733,
+form resume,,1637138933206,
+jump,,1637138933206,1637138935422
+question,/aR6PPMC6cqn8347ghKWeBk/enumerator_num,1637138935463,1637138936817
+question,/aR6PPMC6cqn8347ghKWeBk/refugee_status,1637138936827,1637138938901
+question,/aR6PPMC6cqn8347ghKWeBk/consent,1637138938910,1637138939994
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637138940003,1637138944067
+form exit,,1637138944067,
+form resume,,1637138955949,
+jump,,1637138955949,1637138960487
+question,/aR6PPMC6cqn8347ghKWeBk/enumerator_num,1637138960520,1637138961779
+question,/aR6PPMC6cqn8347ghKWeBk/refugee_status,1637138961789,1637138962670
+question,/aR6PPMC6cqn8347ghKWeBk/consent,1637138962679,1637138965483
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637138965492,1637138971597
+form exit,,1637138971597,
+form resume,,1637138979082,
+jump,,1637138979082,1637138981209
+question,/aR6PPMC6cqn8347ghKWeBk/enumerator_num,1637138981241,1637138982422
+question,/aR6PPMC6cqn8347ghKWeBk/refugee_status,1637138982432,1637138985519
+question,/aR6PPMC6cqn8347ghKWeBk/consent,1637138985528,1637138986431
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637138986441,1637138989630
+question,/aR6PPMC6cqn8347ghKWeBk/consent,1637138989639,1637138997800
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637138997809,1637139007022
+form exit,,1637139007022,
+form resume,,1637139012438,
+jump,,1637139012438,1637139014633
+question,/aR6PPMC6cqn8347ghKWeBk/enumerator_num,1637139014686,1637139016068
+question,/aR6PPMC6cqn8347ghKWeBk/refugee_status,1637139016078,1637139016495
+question,/aR6PPMC6cqn8347ghKWeBk/consent,1637139016510,1637139017009
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637139017028,1637139029881
+form exit,,1637139029881,
+form resume,,1637139057778,
+jump,,1637139057778,1637139059920
+end screen,,1637139059956,1637139071776
+constraint error,,1637139071910,
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637139071938,1637139093811
+form exit,,1637139093811,
+form resume,,1637139137381,
+jump,,1637139137381,1637139141979
+end screen,,1637139142007,1637139147365
+constraint error,,1637139147522,
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637139147577,1637139161015
+form exit,,1637139161015,
+form resume,,1637139167991,
+jump,,1637139167991,1637139176832
+end screen,,1637139176865,1637139194661
+constraint error,,1637139194881,
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637139194924,1637139198387
+jump,,1637139198388,1637139199859
+end screen,,1637139199906,1637139203484
+form save,,1637139204053,
+form exit,,1637139204053,
+form resume,,1637139216818,
+jump,,1637139216819,1637139219783
+end screen,,1637139219811,1637139222637
+form save,,1637139223090,
+form exit,,1637139223090,
+form resume,,1637139247546,
+jump,,1637139247546,1637139250075
+end screen,,1637139250108,1637139296526
+constraint error,,1637139296639,
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637139296663,1637139308297
+jump,,1637139308297,1637139311416
+end screen,,1637139311452,1637139321082
+form exit,,1637139321082,
+form resume,,1637139385153,
+jump,,1637139385153,1637139388960
+end screen,,1637139388989,1637139391396
+jump,,1637139391396,1637139409096
+end screen,,1637139409135,1637139430467
+constraint error,,1637139430600,
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637139430628,1637139436366
+question,/aR6PPMC6cqn8347ghKWeBk/consent,1637139436376,1637139437723
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637139437733,1637139438128
+question,/aR6PPMC6cqn8347ghKWeBk/consent,1637139438141,1637139439200
+question,/aR6PPMC6cqn8347ghKWeBk/hh_characteristics/mpca_assistance_wfp,1637139439208,1637139441745
+jump,,1637139441745,1637139444461
+end screen,,1637139444500,1637139446050
+form save,,1637139446678,
+form exit,,1637139446679,
+form finalize,,1637139446679,

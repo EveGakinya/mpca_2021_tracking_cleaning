@@ -1,0 +1,28 @@
+﻿log_number,X_uuid,date_assessment,enumerator_num,question.name,issue,issue.arabic,action,changed,old.value,new.value,flag_index,contact_name,contact_number
+1,a05c5e1c-8ba6-4732-814c-29261d5a0ef3,2021/11/23 00:00:00,1113,preg_lact,"if lactating or pregnant, there should be atleast one HH female member between 11 and 59 yrs
+","(13 , 12.1) إذا كانت الزوجة حامل أو مرضعة، يجب أن يكون في الأسرة على الأقل أنثى  ضمن الفئة العمرية (11-59 سنة)",Flagged,NA,yes,NA,1,محمد يوسف محمد السموني,0599283667
+2,c9b77902-3677-4bd6-9439-dda645fe0369,2021/11/17 00:00:00,1113,hh_size_girls_11_15,if age group is greater than 9,اذا كانت الفئة العمرية اكبر من ٩,Flagged,NA,10,NA,7,NA,NA
+3,02dd2666-e3e5-41a9-a441-a50cae71f4ee,2021/11/17 00:00:00,1114,hh_size_men_30_64,if age group is greater than 9,اذا كانت الفئة العمرية اكبر من ٩,Flagged,NA,10,NA,13,NA,NA
+4,0e922247-6b35-478f-8f26-6ae035668dd9,2021/11/17 00:00:00,1113,hh_size_women_65,if age group is greater than 9,اذا كانت الفئة العمرية اكبر من ٩,Flagged,NA,10,NA,14,NA,NA
+5,7e9a2f4b-352d-4110-ad0e-b9662ef60401,2021/11/17 00:00:00,1112,food_exp ,if food_exp == 0,(66.1) إذا كانت قيمة الانفاق على الغذاء = صفر,Flagged,NA,0,NA,16,NA,NA
+6,f27431b7-0524-4b45-be57-fd1d93c5210f,2021/11/21 00:00:00,1112,food_exp ,if food_exp == 0,(66.1) إذا كانت قيمة الانفاق على الغذاء = صفر,Flagged,NA,0,NA,16,حسين كمال حسين عرفات,0597862631
+7,7c74a974-f44f-49a1-aa09-ce432438d132,2021/11/22 00:00:00,1113,food_exp ,if food_exp == 0,(66.1) إذا كانت قيمة الانفاق على الغذاء = صفر,Flagged,NA,0,NA,16,محمد صالح سالم المملوك,0599498214
+8,ba52885d-5d67-49a2-bfba-77899908155e,2021/11/23 00:00:00,1113,food_exp ,if food_exp == 0,(66.1) إذا كانت قيمة الانفاق على الغذاء = صفر,Flagged,NA,0,NA,16,محمد تيسير صبحي الحادي,0594479912
+9,0e922247-6b35-478f-8f26-6ae035668dd9,2021/11/17 00:00:00,1113,mpca_assistance_gpc,"if refugee_status is refugee ,  mpca_assistance_gpc must be yes",NA,Flagged,NA,no,NA,18,NA,NA
+10,02dd2666-e3e5-41a9-a441-a50cae71f4ee,2021/11/17 00:00:00,1114,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,4,NA,22,NA,NA
+11,c9b77902-3677-4bd6-9439-dda645fe0369,2021/11/17 00:00:00,1113,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,8,NA,22,NA,NA
+12,0e922247-6b35-478f-8f26-6ae035668dd9,2021/11/17 00:00:00,1113,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,7,NA,22,NA,NA
+13,a1805ebe-6cd9-4add-a57f-8e93f2b1e3b6,2021/11/17 00:00:00,1111,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,8,NA,22,NA,NA
+14,1d8dd496-0384-44d4-9fe8-246b3725c236,2021/11/17 00:00:00,1114,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,6,NA,22,NA,NA
+15,3eb2cc02-c828-434f-bd9b-6092003452da,2021/11/17 00:00:00,1116,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,7,NA,22,NA,NA
+16,f43b1299-d3bd-4aa0-b501-cf26241d24ad,2021/11/21 00:00:00,1116,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,5,NA,22,محمود العبد خليل مريش,0567533709
+17,c510d423-1b96-43a8-90c7-d4a6a13dc108,2021/11/21 00:00:00,1116,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,6,NA,22,أحمد جمال عبد القادر حسان,0592153224
+18,473daf0d-7363-4c83-af1a-4ef3b1fed0a1,2021/11/21 00:00:00,1116,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,5,NA,22,محمد عمر محمد البردويل,0599748906
+19,a8647408-ddb3-4691-89e6-38f02f15320b,2021/11/21 00:00:00,1112,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,7,NA,22,حازم محمد رشدي جبريل,0598269628
+20,f27431b7-0524-4b45-be57-fd1d93c5210f,2021/11/21 00:00:00,1112,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,3,NA,22,حسين كمال حسين عرفات,0597862631
+21,5306b9f7-f083-464e-9884-652ede87c047,2021/11/22 00:00:00,1116,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,6,NA,22,محمد مرعي محمد العطار,0598330067
+22,12a68925-0766-4b6e-be5d-1f259a823470,2021/11/22 00:00:00,1116,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,9,NA,22,محمد أحمد عيد جاد الله,0599020762
+23,98c55e0d-ff99-4d86-bda0-775989fac1b8,2021/11/23 00:00:00,1118,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,8,NA,22,محمد عبد الهادي وشاح,0595303224
+24,452e7fb2-28f3-4c11-9d75-4526dbdefe52,2021/11/24 00:00:00,1117,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,8,NA,22,سعيد سلام صبح واكد,0595196711
+25,d6660b70-8b2a-4a17-ab9e-a51395e0bccd,2021/11/24 00:00:00,1116,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,8,NA,22,ناجي محمد خميس القصاص,0599326912
+26,b3bf8036-f6d0-4950-baae-660264faa628,2021/11/24 00:00:00,1112,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,9,NA,22,خليل نعيم خليل العويطي,0599926692

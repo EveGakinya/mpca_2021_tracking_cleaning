@@ -1,0 +1,25 @@
+result_column_name,conditions,type,question.name,issue_label,issue_arabic,old_value,new_column_name,action_label
+action,"df$preg_lact == ""yes"" & (df$hh_size_girls_11_15 == 0 & df$hh_size_girls_16_17 == 0 & df$hh_size_women_18_29 == 0 & df$hh_size_women_30_64 == 0)",normal,preg_lact,"if lactating or pregnant, there should be atleast one HH female member between 11 and 59 yrs
+","(13 , 12.1) ??? ???? ?????? ???? ?? ?????? ??? ?? ???? ?? ?????? ??? ????? ????  ??? ????? ??????? (11-59 ???)",df$preg_lact,df$lactating_checked,Flagged
+action,as.numeric(df$hh_size_boys_0_4) > 9,normal,hh_size_boys_0_4,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_boys_0_4,df$hh_size_boys_0_4_check,Flagged
+action,as.numeric(df$hh_size_girls_0_4) > 9,normal,hh_size_girls_0_4,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_girls_0_4,df$hh_size_girls_0_4_check,Flagged
+action,as.numeric(df$hh_size_boys_5_10) > 9,normal,hh_size_boys_5_10,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_boys_5_10,df$hh_size_boys_5_10_check,Flagged
+action,as.numeric(df$hh_size_girls_5_10) > 9,normal,hh_size_girls_5_10,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_girls_5_10,df$hh_size_girls_5_10_check,Flagged
+action,as.numeric(df$hh_size_boys_11_15) > 9,normal,hh_size_boys_11_15,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_boys_11_15,df$hh_size_boys_11_15_check,Flagged
+action,as.numeric(df$hh_size_girls_11_15) > 9,normal,hh_size_girls_11_15,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_girls_11_15,df$hh_size_girls_11_15_check,Flagged
+action,as.numeric(df$hh_size_boys_16_17) > 9,normal,hh_size_boys_16_17,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_boys_16_17,df$hh_size_boys_16_17_check,Flagged
+action,as.numeric(df$hh_size_girls_16_17) > 9,normal,hh_size_girls_16_17,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_girls_16_17,df$hh_size_girls_16_17_check,Flagged
+action,as.numeric(df$hh_size_women_18_29) > 9,normal,hh_size_women_18_29,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_women_18_29,df$hh_size_women_18_29_check,Flagged
+action,as.numeric(df$hh_size_men_18_29) > 9,normal,hh_size_men_18_29,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_men_18_29,df$hh_size_men_18_29_check,Flagged
+action,as.numeric(df$hh_size_women_30_64) > 9,normal,hh_size_women_30_64,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_women_30_64,df$hh_size_women_30_64_check,Flagged
+action,as.numeric(df$hh_size_men_30_64) > 9,normal,hh_size_men_30_64,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_men_30_64,df$hh_size_men_30_64_check,Flagged
+action,as.numeric(df$hh_size_women_65) > 9,normal,hh_size_women_65,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_women_65,df$hh_size_women_65_check,Flagged
+action,as.numeric(df$hh_size_men_65) > 9,normal,hh_size_men_65,if age group is greater than 9,??? ???? ????? ??????? ???? ?? ?,df$hh_size_men_65,df$hh_size_men_65_check,Flagged
+action,df$food_exp == 0,normal,food_exp ,if food_exp == 0,(66.1) ??? ???? ???? ??????? ??? ?????? = ???,df$food_exp ,df$food_exp_check,Flagged
+action,"df$occupancy_arrangement == ""rented"" &(df$shelter_type == ""tent"" | df$shelter_type == ""makeshift_shelter"" | df$shelter_type == ""collective_shelter"")",normal,occupancy_arrangement,"if selected primary shelter is tent, makeshift, collective shelter and  occupancy status  equals to rented.",,df$occupancy_arrangement,df$occupancy_arrangement_check,Flagged
+action,"df$refugee_status == ""refugee"" & df$mpca_assistance_gpc != ""yes""",normal,mpca_assistance_gpc,"if refugee_status is refugee ,  mpca_assistance_gpc must be yes",,df$mpca_assistance_gpc,df$mpca_assistance_check,Flagged
+action,"df$refugee_status == ""non_refugee"" & df$mpca_assistance_wfp != ""yes""",normal,mpca_assistance_wfp,"if refugee_status is nonrefugee ,  mpca_assistance_wfp be yes",,df$mpca_assistance_wfp,df$mpca_assistance_wfp,Flagged
+action,df$adult_employment_num > 0 & as.numeric(df$tot_adults) == 0 ,normal,adult_employment_num,"if adult_employment_num is yes,  one of the following at least must  have an integer number ",,df$adult_employment_num,df$adult_check,Flagged
+action,df$child_employment_num > 0 & as.numeric(df$tot_children) == 0 ,normal,child_employment_num,"if child_employment_num is yes,  one of the following at least must  have an integer number",,df$child_employment_num,df$child_check,Flagged
+action,df$hh_size != df$household_size_1,normal,household_size_1, if HH size not equal to the sum of age groups,,df$household_size_1,g$hh_size_check,Flagged
+,,,,,,,,

@@ -1,0 +1,12 @@
+﻿log_number,X_uuid,date_assessment,enumerator_num,question.name,issue,issue.arabic,action,changed,old.value,new.value,flag_index
+1,c9b77902-3677-4bd6-9439-dda645fe0369,2021/11/17 00:00:00,1113,hh_size_girls_11_15,if age group is greater than 9,اذا كانت الفئة العمرية اكبر من ٩,Flagged,NA,10,NA,7
+2,02dd2666-e3e5-41a9-a441-a50cae71f4ee,2021/11/17 00:00:00,1114,hh_size_men_30_64,if age group is greater than 9,اذا كانت الفئة العمرية اكبر من ٩,Flagged,NA,10,NA,13
+3,0e922247-6b35-478f-8f26-6ae035668dd9,2021/11/17 00:00:00,1113,hh_size_women_65,if age group is greater than 9,اذا كانت الفئة العمرية اكبر من ٩,Flagged,NA,10,NA,14
+4,7e9a2f4b-352d-4110-ad0e-b9662ef60401,2021/11/17 00:00:00,1112,food_exp ,if food_exp == 0,(66.1) إذا كانت قيمة الانفاق على الغذاء = صفر,Flagged,NA,0,NA,16
+5,0e922247-6b35-478f-8f26-6ae035668dd9,2021/11/17 00:00:00,1113,mpca_assistance_gpc,"if refugee_status is refugee ,  mpca_assistance_gpc must be yes",NA,Flagged,NA,no,NA,18
+6,02dd2666-e3e5-41a9-a441-a50cae71f4ee,2021/11/17 00:00:00,1114,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,4,NA,22
+7,c9b77902-3677-4bd6-9439-dda645fe0369,2021/11/17 00:00:00,1113,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,8,NA,22
+8,0e922247-6b35-478f-8f26-6ae035668dd9,2021/11/17 00:00:00,1113,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,7,NA,22
+9,a1805ebe-6cd9-4add-a57f-8e93f2b1e3b6,2021/11/17 00:00:00,1111,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,8,NA,22
+10,1d8dd496-0384-44d4-9fe8-246b3725c236,2021/11/17 00:00:00,1114,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,6,NA,22
+11,3eb2cc02-c828-434f-bd9b-6092003452da,2021/11/17 00:00:00,1116,household_size_1, if HH size not equal to the sum of age groups,NA,Flagged,NA,7,NA,22

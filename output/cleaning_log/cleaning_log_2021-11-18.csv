@@ -1,0 +1,4 @@
+﻿log_number,X_uuid,date_assessment,enumerator_num,question.name,issue,issue.arabic,action,changed,old.value,new.value,flag_index
+1,c9b77902-3677-4bd6-9439-dda645fe0369,2021/11/17 00:00:00,1113,hh_size_girls_11_15,if age group is greater than 9,اذا كانت الفئة العمرية اكبر من ٩,Flagged,NA,10,NA,7
+2,02dd2666-e3e5-41a9-a441-a50cae71f4ee,2021/11/17 00:00:00,1114,hh_size_men_30_64,if age group is greater than 9,اذا كانت الفئة العمرية اكبر من ٩,Flagged,NA,10,NA,13
+3,0e922247-6b35-478f-8f26-6ae035668dd9,2021/11/17 00:00:00,1113,hh_size_women_65,if age group is greater than 9,اذا كانت الفئة العمرية اكبر من ٩,Flagged,NA,10,NA,14
