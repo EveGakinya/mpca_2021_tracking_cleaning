@@ -43,6 +43,10 @@ df <- df %>% distinct(`_uuid`, .keep_all = TRUE)
 #Outlier checking ###################################################################################################################
 cleaning_log <- cleaninginspectoR::find_outliers(df)
 
+###Outier comments####
+#I confirmed the hh sizes for the 10 households are true.
+
+
 
 # Time check from audit files########################################################################################################
 
