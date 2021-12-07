@@ -132,6 +132,28 @@ deleted_surveys <- replaced_df %>%
 # remove deleted surveys from cleaned dataset
 replaced_df %<>% filter(deleted == "no")
 
+##########################RECALCULATING VARIABLES     ##################################################################
+####because the calculations on the tool were not accurate ##################
+cols.num <- c("hh_size_girls_0_4", "hh_size_girls_5_10", "hh_size_girls_11_15", "hh_size_girls_16_17", "hh_size_women_18_29",
+              "hh_size_women_30_64","hh_size_women_65","hh_size_boys_0_4", "hh_size_boys_5_10", "hh_size_boys_11_15", 
+              "hh_size_boys_16_17","hh_size_men_18_29", "hh_size_men_30_64", "hh_size_men_65")
+replaced_df <- replaced_df %>% mutate_at(cols.num, as.numeric)
+
+
+
+replaced_df<- replaced_df %>% 
+  rowwise() %>%
+  mutate(tot_female = sum(hh_size_girls_0_4,hh_size_girls_5_10,hh_size_girls_11_15,hh_size_girls_16_17,hh_size_women_30_64,hh_size_women_65,hh_size_women_18_29, na.rm = T),
+         tot_male = sum(hh_size_boys_0_4,hh_size_boys_5_10,hh_size_boys_11_15,hh_size_boys_16_17,hh_size_men_18_29, hh_size_men_30_64,hh_size_men_65, na.rm = T),
+         tot_boys = sum(hh_size_boys_0_4,hh_size_boys_5_10,hh_size_boys_11_15,hh_size_boys_16_17, na.rm = T),
+         tot_girls = sum(hh_size_girls_0_4,hh_size_girls_5_10,hh_size_girls_11_15,hh_size_girls_16_17, na.rm = T),
+         tot_adults = sum(hh_size_women_18_29,hh_size_women_30_64,hh_size_women_65,hh_size_men_18_29, hh_size_men_30_64,hh_size_men_65, na.rm = T),
+         hh_size = sum(tot_female,tot_male, na.rm = T))
+
+
+
+
+
 
 #DELETE COLUMNS
 replaced_df[, c(
