@@ -47,7 +47,6 @@ cleaning_log <- cleaninginspectoR::find_outliers(df)
 #I confirmed the hh sizes for the 10 households are true.
 
 
-
 # Time check from audit files########################################################################################################
 
 df$today <- as.Date(df$start, "%Y-%m-%d")
@@ -116,6 +115,16 @@ rename_vars <- function(df){
 df <- rename_vars(df)
 
 
+#######Add variable total expenses
+
+cols.names <- c("food_exp", "clothing_exp", "housing_exp","appliances_exp","debt_repayment","house_needs_exp","health_exp",
+                "transp_exp","communication_exp","recreation_exp","personal_exp","cigarettes_exp","electricity_exp")
+
+df <- df %>% mutate_at(cols.names, as.numeric)
+df<- df %>% 
+  rowwise() %>%
+  mutate(total_exp = sum(food_exp, clothing_exp, housing_exp,appliances_exp,debt_repayment,house_needs_exp,health_exp,
+                         transp_exp,communication_exp,recreation_exp,personal_exp,cigarettes_exp,electricity_exp, na.rm = T))
 
 ########################################################################################################################################
 # Read log csv file after decision on flagged data #####################################################################################
@@ -146,8 +155,16 @@ replaced_df<- replaced_df %>%
   mutate(tot_female = sum(hh_size_girls_0_4,hh_size_girls_5_10,hh_size_girls_11_15,hh_size_girls_16_17,hh_size_women_30_64,hh_size_women_65,hh_size_women_18_29, na.rm = T),
          tot_male = sum(hh_size_boys_0_4,hh_size_boys_5_10,hh_size_boys_11_15,hh_size_boys_16_17,hh_size_men_18_29, hh_size_men_30_64,hh_size_men_65, na.rm = T),
          tot_boys = sum(hh_size_boys_0_4,hh_size_boys_5_10,hh_size_boys_11_15,hh_size_boys_16_17, na.rm = T),
+         girls_11_17 = sum(hh_size_girls_11_15,hh_size_girls_16_17, na.rm = T),
+         boys_11_17 = sum(hh_size_boys_11_15,hh_size_boys_16_17,na.rm = T),
+         boys_6_17 = sum(hh_size_boys_11_15,hh_size_boys_5_10,hh_size_boys_16_17,na.rm = T),
+         boys_0_5 = hh_size_boys_0_4,
+         girls_6_17 = sum(hh_size_girls_11_15,hh_size_girls_16_17,hh_size_girls_5_10,na.rm = T),
+         girls_0_5 = hh_size_girls_0_4,
          tot_girls = sum(hh_size_girls_0_4,hh_size_girls_5_10,hh_size_girls_11_15,hh_size_girls_16_17, na.rm = T),
          tot_adults = sum(hh_size_women_18_29,hh_size_women_30_64,hh_size_women_65,hh_size_men_18_29, hh_size_men_30_64,hh_size_men_65, na.rm = T),
+         tot_children_school = sum(hh_size_boys_5_10+hh_size_boys_11_15+hh_size_boys_16_17+hh_size_girls_5_10+hh_size_girls_11_15+hh_size_girls_16_17,na.rm = T),
+         tot_children = sum(tot_boys,tot_girls,na.rm = T),
          hh_size = sum(tot_female,tot_male, na.rm = T))
 
 
@@ -156,6 +173,12 @@ replaced_df<- replaced_df %>%
 
 
 #DELETE COLUMNS
+replaced_df <- replaced_df %>% 
+  dplyr::select(-contains("pca_shock_ineffective_loss_employ"),
+                -contains("mpca_shock_ineffective_loss_inventory"),
+                -contains("mpca_shock_ineffective_new_member"))
+
+
 replaced_df[, c(
   "consent",
   "deviceid",
@@ -191,11 +214,13 @@ replaced_df[, c(
   "exp_note",
   "lcsi_note",
   "change_behaviors_mpca_note",
+  "role_mpca_loss_inventory",
   "thanks",
   "end_submit",
   "contact_name",
   "contact_number",
-  "_uuid"
+  "_uuid",
+  "household_size_1"
   
 )] <- list(NULL)
 
@@ -256,6 +281,7 @@ replaced_df <- replaced_df %>% replace_with_na_all(condition = ~.x == 999)
 ###########Relocating variable X_uuid
 
 replaced_df <- replaced_df %>% relocate( X_uuid, .before = refugee_status) %>% 
+                              relocate (total_exp, .after = electricity_exp) %>% 
                arrange(desc(refugee_status))
 
 ###########################################################################################################
