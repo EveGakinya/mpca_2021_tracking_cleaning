@@ -289,8 +289,21 @@ replaced_df <- replaced_df %>% relocate( X_uuid, .before = refugee_status) %>%
                               relocate (total_exp, .after = electricity_exp) %>% 
                arrange(desc(refugee_status))
 
+
+#replacing the total expenses less than 200 to NA
 replaced_df <- replaced_df %>% 
   mutate(total_exp = ifelse(total_exp < 200, NA_real_, total_exp)) 
+
+
+
+#replacing all expenditures to NA whose total expenses are NA
+cols_to_mutate <- cols.names
+
+
+replaced_df <- replaced_df %>%
+mutate_at(cols_to_mutate, funs(case_when(!is.na(total_exp) ~ .,
+                                       TRUE ~ NA_real_)))
+
   
 ###########################################################################################################
 # export clean data
