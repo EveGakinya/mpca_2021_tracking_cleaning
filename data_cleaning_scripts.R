@@ -115,16 +115,6 @@ rename_vars <- function(df){
 df <- rename_vars(df)
 
 
-#######Add variable total expenses
-
-cols.names <- c("food_exp", "clothing_exp", "housing_exp","appliances_exp","debt_repayment","house_needs_exp","health_exp",
-                "transp_exp","communication_exp","recreation_exp","personal_exp","cigarettes_exp","electricity_exp")
-
-df <- df %>% mutate_at(cols.names, as.numeric)
-df<- df %>% 
-  rowwise() %>%
-  mutate(total_exp = sum(food_exp, clothing_exp, housing_exp,appliances_exp,debt_repayment,house_needs_exp,health_exp,
-                         transp_exp,communication_exp,recreation_exp,personal_exp,cigarettes_exp,electricity_exp, na.rm = T))
 
 ########################################################################################################################################
 # Read log csv file after decision on flagged data #####################################################################################
@@ -133,6 +123,21 @@ log_df <- read.csv(sprintf("input/filled_cleaning_log/cleaning_log_%s.csv",today
 replaced_df <- read_logs(df, log_df, conditionDf) 
 
 #######################################################################################################################################
+#######Add variable total expenses
+
+cols.names <- c("food_exp", "clothing_exp", "housing_exp","appliances_exp","debt_repayment","house_needs_exp","health_exp",
+                "transp_exp","communication_exp","recreation_exp","personal_exp","cigarettes_exp","electricity_exp")
+
+
+
+replaced_df <- replaced_df %>% mutate_at(cols.names, as.numeric)
+replaced_df<- replaced_df %>%
+  rowwise() %>%
+  mutate(total_exp = sum(food_exp, clothing_exp, housing_exp,appliances_exp,debt_repayment,house_needs_exp,health_exp,
+                         transp_exp,communication_exp,recreation_exp,personal_exp,cigarettes_exp,electricity_exp, na.rm = T))
+
+
+
 
 # take uuids of deleted surveys and remove from cleaned dataset
 deleted_surveys <- replaced_df %>% 
@@ -284,6 +289,9 @@ replaced_df <- replaced_df %>% relocate( X_uuid, .before = refugee_status) %>%
                               relocate (total_exp, .after = electricity_exp) %>% 
                arrange(desc(refugee_status))
 
+replaced_df <- replaced_df %>% 
+  mutate(total_exp = ifelse(total_exp < 200, NA_real_, total_exp)) 
+  
 ###########################################################################################################
 # export clean data
 write.csv(replaced_df, sprintf("output/cleaned_data/mpca_data_clean_parent_%s.csv",today()), row.names = FALSE)
@@ -304,7 +312,7 @@ deleted_redacted <- deleted_surveys %>%
     deleted
   )
 
-
+cleaning_log_2 <- cleaninginspectoR::find_outliers(replaced_df)
 
 # export to one spreadsheet
 mpca_datasets <-
